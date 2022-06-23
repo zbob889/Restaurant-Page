@@ -24,10 +24,6 @@ function addText (addToID, text){
 }
 
 export default function pageLoad() {
-    addElement('div', '', 'header', 'container');
-    addElement('p', '', 'headerText', 'header');
-    addText('headerText', "Claudia's Nosh!");
-
     addElement('div', '', 'content', 'container');
     addElement('p', '', 'contentText', 'content');
     addText('contentText', 'Blah blah blah');

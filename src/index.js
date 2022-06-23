@@ -1,11 +1,7 @@
 import "./style.css";
-import Holishkes from './holishkes.jpeg';
+import addElement from './addElement.js';
 import pageLoad from './page-load.js';
 
-
-let container = document.getElementById('container');
-
-const holishkesPicture = new Image();
-holishkesPicture.src = Holishkes;
+addElement('div', '', 'header', 'container');
 
 pageLoad();
