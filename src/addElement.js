@@ -6,6 +6,4 @@ export default function addElement(elementType, elementClass, elementID, addToID
     let parent = document.getElementById(`${addToID}`);
     parent.appendChild(newElement);
 
-    console.log('addElement ran successfully!');
-
 };
