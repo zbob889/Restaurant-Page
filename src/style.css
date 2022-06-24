@@ -4,6 +4,14 @@
     font-family: 'Roboto';
 }
 
+:root {
+    --main-teal: #5b7ca7;
+    --main-gold: #db9941;
+    --main-tan: #dbc197;
+    --main-purple: #985a71;
+    --main-green: #8dae87;
+}
+
 #container {
     display: grid;
     grid-template: 1fr 15fr 1fr / 1fr;
@@ -13,7 +21,7 @@
 
 #header {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: teal;
+    background-color: var(--main-teal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,19 +37,23 @@
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25) ;
-    background-color: #daa520;
+    background-color: var(--main-gold);
     transition: .2s;
 }
 
 .button:hover {
-    background-color: rgb(250, 189, 35);
+    background-color: #e6a146;
     transform: scale(1.02);
 }
 
 #content {
     grid-area: 2 / 1 / 3 / 2;
-    background-color: gray;
+    background-color: var(--main-green);
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #holishkes {
@@ -49,7 +61,42 @@
     max-width: 100%;
 }
 
+#homeContainer {
+    flex: 1;
+    width: 50vw;
+    min-width: 200px;
+    background-color: var(--main-purple);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#restaurantName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#restaurantInfo {
+    display: flex;
+    justify-content: center;
+    padding: 45px 26px 26px 26px;
+    font-size: 24px;
+    line-height: 2;
+}
+
 #footer { 
     grid-area: 3 / 1 / 4 / 2;
-    background-color: teal;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-size: 12px;
+    background-color: var(--main-teal);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }

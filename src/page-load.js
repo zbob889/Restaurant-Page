@@ -23,5 +23,4 @@ export default function pageLoad() {
     addElement('div', '', 'content', 'container');
     addElement('p', '', 'contentText', 'content');
     addText('contentText', 'Blah blah blah');
-    document.getElementById('content').appendChild(holishkesPicture);
 };
