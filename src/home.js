@@ -2,7 +2,7 @@ import addElement from './addElement.js';
 import addText from './addText.js';
 
 export default function loadHome(){
-    addElement('div', '', 'homeContainer', 'content');
+    addElement('div', 'card', 'homeContainer', 'content');
     addElement('p', '', 'restaurantName', 'homeContainer');
     addText('restaurantName', "Claudia's Nosh");
     addElement('p', '', 'restaurantInfo', 'homeContainer');
